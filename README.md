@@ -1,5 +1,7 @@
 #  一个简单的mcp控制示例
 
+- 杂鱼lava出品
+
 包含mcp server和向串口发送信息的脚本，esp32烧录程序部分非常简单此处不再单独列出
 
 MCP Server 暴露两个工具：
@@ -9,9 +11,14 @@ MCP Server 暴露两个工具：
 
 MaiBot 需要在 `config/bot_config.toml` 的 `mcp.servers` 中配置该服务，并在重启后生效。
 
-插件在 `_manifest.json` 中声明了 `pyserial>=3.5`，MaiBot 插件依赖流水线会把它加入自动安装计划。
+### 使用方法
 
-环境变量：
+克隆此项目并安装pyserial,此处建议使用[uv](https://docs.astral.sh/uv/)安装依赖
 
-- `ESP32_PORT`：指定串口，例如 `/dev/ttyUSB0`
-- `ESP32_BAUD`：指定波特率，默认 `115200`
+```
+uv pip install pyserial
+```
+
+在maibot内部配置mcp server,图示为示例，将此mcp的实际位置填入即可
+
+![mcp](images/mcp.png)

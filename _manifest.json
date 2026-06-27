@@ -1,22 +1,19 @@
 {
   "manifest_version": 2,
-  "version": "1.0.0",
-  "name": "Zayu 灯光 MCP 控制",
+  "version": "1.0.1",
+  "name": "mcp 灯光控制",
   "description": "通过本地 MCP Server 暴露开灯和关灯工具，由插件内串口控制代码向 ESP32 发送灯光指令。",
   "author": {
-    "name": "Local User",
-    "url": "https://github.com/MaiM-with-u/maibot"
+    "name": "杂鱼lava",
+    "url": "https://github.com/lava-xa/light_mcp_server"
   },
   "license": "MIT",
   "urls": {
-    "repository": "https://github.com/MaiM-with-u/maibot",
-    "homepage": "https://github.com/MaiM-with-u/maibot",
-    "documentation": "https://github.com/MaiM-with-u/maibot",
-    "issues": "https://github.com/MaiM-with-u/maibot/issues"
+    "repository": "https://github.com/lava-xa/light_mcp_server",
   },
   "host_application": {
     "min_version": "1.0.0",
-    "max_version": "1.0.0"
+    "max_version": "11.45.14"
   },
   "sdk": {
     "min_version": "2.0.0",
@@ -39,5 +36,5 @@
       "zh-CN"
     ]
   },
-  "id": "local.zayu-light-mcp"
+  "id": "light_mcp_server"
 }
